@@ -1,0 +1,24 @@
+<div class="container">
+    <h2>Order Tracking</h2>
+<br>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>UserId</th>
+            <th>OrderNumber</th>
+            <th>Status</th>
+            <th>CreatedAt</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let order of orders">
+            <td>{{ order.id }}</td>
+            <td>{{ order.userId }}</td>
+            <td>{{ order.orderNumber}}</td>
+            <td>{{ order.status }}</td>
+            <td>{{ order.createdAt }}</td>
+        </tr>
+    </tbody>
+</table>
+</div>

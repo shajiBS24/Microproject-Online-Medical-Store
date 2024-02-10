@@ -1,0 +1,93 @@
+<div class="bg">
+  <div class="container">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title"><b>Place Your Order</b></h5>
+        <div class="card-text">
+          <form [formGroup]="myForm" id="myForm">
+            <div class="mb-3">
+              <label class="form-label">Customer Name</label>
+              <input type="text" class="form-control" formControlName="userName"
+                placeholder="Enter the Customer name" />
+              <div *ngIf="myForm.get('userName')!.touched && myForm.get('userName')!.invalid">
+                <div *ngIf="myForm.get('userName')!.hasError('required')">
+                  <font color="red">Customer Name is required</font>
+                </div>
+                <div *ngIf="myForm.get('userName')!.hasError('pattern')">
+                  <font color="red">Customer Name is invalid</font>
+                </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="product">Medicine</label>
+              <div class="input-group mb-3">
+                <select class="form-select" formControlName="medicineName">
+                  <option disabled selected>Select Medicine...</option>
+                  <option value="Paracetamol">Paracetamol</option>
+                  <option value="Elastic Bandage">Elastic Bandage</option>
+                  <option value="Digital Thermometer">Digital Thermometer</option>
+                  <option value="First Aid Kit">First Aid Kit</option>
+                  <option value="Cough Syrup">Cough Syrup</option>
+                  <option value="Pain Relief Gel">Pain Relief Gel</option>
+                  <option value="Blood Pressure Monitor">Blood Pressure Monitor</option>
+                  <option value="Inhaler">Inhaler</option>
+                  <option value="Eye Drops">Eye Drops</option>
+                </select>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Quantity</label>
+              <input type="number" class="form-control" formControlName="quantity" placeholder="Enter the quantity" />
+              <div *ngIf="myForm.get('quantity')!.touched && myForm.get('quantity')!.invalid">
+                <div *ngIf="myForm.get('quantity')!.hasError('required')">
+                  <font color="red">Quantity is required</font>
+                </div>
+                <div *ngIf="myForm.get('quantity')!.hasError('pattern')">
+                  <font color="red">Quantity is invalid</font>
+                </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Total Amount</label>
+              <input type="number" class="form-control" formControlName="totalAmount" placeholder="Enter the Total amount" />
+              <div *ngIf="myForm.get('totalAmount')!.touched && myForm.get('totalAmount')!.invalid">
+                <div *ngIf="myForm.get('totalAmount')!.hasError('required')">
+                  <font color="red">Total Amount is required</font>
+                </div>
+                <div *ngIf="myForm.get('totalAmount')!.hasError('pattern')">
+                  <font color="red">Total Amount is invalid</font>
+                </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Address</label>
+              <div class="row">
+                <div class="col-sm">
+              <input type="text" class="form-control" formControlName="doorNo" placeholder="Door No" />
+              <!-- Validation messages for door number -->
+              </div>
+              <div class="col-sm">
+              <input type="text" class="form-control" formControlName="street" placeholder="Street" />
+              <!-- Validation messages for street -->
+              </div>
+              </div>
+              <br>
+              <div class="row">
+              <div class="col-sm">
+              <input type="text" class="form-control" formControlName="city" placeholder="City" />
+              <!-- Validation messages for city -->
+              </div>
+              <div class="col-sm">
+              <input type="text" class="form-control" formControlName="pincode" placeholder="Pincode" />
+              <!-- Validation messages for pincode -->
+              </div>
+            </div>
+            </div>
+            <!-- [disabled]="myForm.invalid" -->
+            <button type="submit" class="btn btn-primary" (click)="PlaceOrder(myForm.value)" routerLink="/orderTracking">Place Order</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

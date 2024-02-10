@@ -1,0 +1,51 @@
+<header class="sticky-lg-top">
+<div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="logo">
+                <img
+                    src="https://img.freepik.com/free-vector/hospital-logo-design-vector-medical-cross_53876-136743.jpg?size=338&ext=jpg&ga=GA1.1.1448711260.1706745600&semt=ais">
+            </div>
+            <a class="navbar-brand" href="#">MedHealthCare</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/userManagement">User Management</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/orderManagement">Order Management</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/login">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+</header>
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="opacity: 80%;">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="../assets/MHC-coverImage.png" class="img-fluid mx-auto w-100 d-block" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="../assets/MHC-coverImage.png" class="img-fluid mx-auto w-100 d-block" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="../assets/MHC-coverImage.png" class="img-fluid mx-auto w-100 d-block" alt="...">
+        </div>
+    </div>
+</div>
+<br><br>
+
+<router-outlet></router-outlet>
+
+

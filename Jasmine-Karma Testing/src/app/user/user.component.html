@@ -1,0 +1,333 @@
+<header class="sticky-lg-top">
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <div class="logo">
+                    <img
+                        src="https://img.freepik.com/free-vector/hospital-logo-design-vector-medical-cross_53876-136743.jpg?size=338&ext=jpg&ga=GA1.1.1448711260.1706745600&semt=ais">
+                </div>
+                <a class="navbar-brand" href="#">MedHealthCare</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/cart">MyCart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    </header>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="opacity: 80%;">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="../assets/MHC-coverImage.png" class="img-fluid mx-auto w-100 d-block" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="../assets/MHC-coverImage.png" class="img-fluid mx-auto w-100 d-block" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="../assets/MHC-coverImage.png" class="img-fluid mx-auto w-100 d-block" alt="...">
+        </div>
+    </div>
+</div>
+<br><br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg">
+            <div class="card">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2023/2/HR/CZ/QW/6918745/paracetamol-500mg-tablets-intemol-500-2-.jpeg"
+                                class="card-img-top" alt="Medicine">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2023/2/HR/CZ/QW/6918745/paracetamol-500mg-tablets-intemol-500-2-.jpeg"
+                                class="card-img-top" alt="Medicine">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2023/2/HR/CZ/QW/6918745/paracetamol-500mg-tablets-intemol-500-2-.jpeg"
+                                class="card-img-top" alt="Medicine">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Paracetamol</h5>
+                    <p class="card-text">Relieves pain and reduces fever.</p>
+                    <p class="card-text"><Strong>Price:</Strong> $5.99</p>
+                    <button class="btn btn-primary" routerLink="/cart" (click)="addToCart(medicines)" name="add" >Add to Cart</button>                </div>
+            </div>
+        </div>
+        <div class="col-lg">
+            <div class="card">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://m.media-amazon.com/images/I/81wsXmdtdsL.jpg" class="card-img-top"
+                                alt="Bandage">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://m.media-amazon.com/images/I/81wsXmdtdsL.jpg" class="card-img-top"
+                                alt="Bandage">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://m.media-amazon.com/images/I/81wsXmdtdsL.jpg" class="card-img-top"
+                                alt="Bandage">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Elastic Bandage</h5>
+                    <p class="card-text">For sprains and strains.</p>
+                    <p class="card-text"><Strong>Price:</Strong> $3.49</p>
+                    <button class="btn btn-primary" routerLink="/cart" (click)="addToCart(medicines)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <diV class="col-lg">
+            <div class="card">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://m.media-amazon.com/images/I/51uKL93ozzL._AC_UF1000,1000_QL80_.jpg"
+                                class="card-img-top" alt="Thermometer">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://m.media-amazon.com/images/I/51uKL93ozzL._AC_UF1000,1000_QL80_.jpg"
+                                class="card-img-top" alt="Thermometer">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://m.media-amazon.com/images/I/51uKL93ozzL._AC_UF1000,1000_QL80_.jpg"
+                                class="card-img-top" alt="Thermometer">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Digital Thermometer</h5>
+                    <p class="card-text">Accurate Temperature measurement.</p>
+                    <p class="card-text"><Strong>Price:</Strong> $9.99</p>
+                    <button class="btn btn-primary" routerLink="/cart" (click)="addToCart(medicines)">Add to Cart</button>
+                </div>
+            </div>
+        </diV>
+    </div>
+</div>
+<br><br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg">
+            <div class="card">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://www.rasperonline.in/cdn/shop/products/SDA4156RED_3_1024x1024@2x.jpg?v=1671096327"
+                                class="card-img-top" alt="First Aid Kit">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.rasperonline.in/cdn/shop/products/SDA4156RED_3_1024x1024@2x.jpg?v=1671096327"
+                                class="card-img-top" alt="First Aid Kit">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.rasperonline.in/cdn/shop/products/SDA4156RED_3_1024x1024@2x.jpg?v=1671096327"
+                                class="card-img-top" alt="First Aid Kit">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">First Aid Kit</h5>
+                    <p class="card-text">Essential for emergencies.</p>
+                    <p class="card-text"><Strong>Price:</Strong> $19.99</p>
+                    <button class="btn btn-primary" routerLink="/cart" (click)="addToCart(medicines)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg">
+            <div class="card">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://m.media-amazon.com/images/I/91xwpuZBubL.jpg" class="card-img-top"
+                                alt="Cough Syrup">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://m.media-amazon.com/images/I/91xwpuZBubL.jpg" class="card-img-top"
+                                alt="Cough Syrup">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://m.media-amazon.com/images/I/91xwpuZBubL.jpg" class="card-img-top"
+                                alt="Cough Syrup">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Cough Syrup</h5>
+                    <p class="card-text">Relieves cough and cold symptoms.</p>
+                    <p class="card-text"><Strong>Price:</Strong> $7.99</p>
+                    <button class="btn btn-primary" routerLink="/cart" (click)="addToCart(medicines)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <diV class="col-lg">
+            <div class="card">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://onemg.gumlet.io/l_watermark_346,w_480,h_480/a_ignore,w_480,h_480,c_fit,q_auto,f_auto/fad072cdf7ff472099fce79c11a8d76d.jpg"
+                                class="card-img-top" alt="Pain Relief Gel">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://onemg.gumlet.io/l_watermark_346,w_480,h_480/a_ignore,w_480,h_480,c_fit,q_auto,f_auto/fad072cdf7ff472099fce79c11a8d76d.jpg"
+                                class="card-img-top" alt="Pain Relief Gel">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://onemg.gumlet.io/l_watermark_346,w_480,h_480/a_ignore,w_480,h_480,c_fit,q_auto,f_auto/fad072cdf7ff472099fce79c11a8d76d.jpg"
+                                class="card-img-top" alt="Pain Relief Gel">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Pain Relief Gel</h5>
+                    <p class="card-text">Smooths the muscle pain and relief.</p>
+                    <p class="card-text"><Strong>Price:</Strong> $6.49</p>
+                    <button class="btn btn-primary" routerLink="/cart" (click)="addToCart(medicines)">Add to Cart</button>
+                </div>
+            </div>
+        </diV>
+    </div>
+</div>
+<br><br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg">
+            <div class="card">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://i.pinimg.com/564x/16/ac/ff/16acffc922375f32b10e4e624cced4e6.jpg"
+                                class="card-img-top" alt="Blood Pressure Monitor">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.pinimg.com/564x/16/ac/ff/16acffc922375f32b10e4e624cced4e6.jpg"
+                                class="card-img-top" alt="Blood Pressure Monitor">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.pinimg.com/564x/16/ac/ff/16acffc922375f32b10e4e624cced4e6.jpg"
+                                class="card-img-top" alt="Blood Pressure Monitor">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Blood Pressure Monitor</h5>
+                    <p class="card-text">Measure blood pressure at home.</p>
+                    <p class="card-text"><Strong>Price:</Strong> $29.99</p>
+                    <button class="btn btn-primary" routerLink="/cart" (click)="addToCart(medicines)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg">
+            <div class="card">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2022/10/WJ/RX/GA/3010750/tiotropium-bromide-inhaler.png"
+                                class="card-img-top" alt="Inhaler">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2022/10/WJ/RX/GA/3010750/tiotropium-bromide-inhaler.png"
+                                class="card-img-top" alt="Inhaler">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2022/10/WJ/RX/GA/3010750/tiotropium-bromide-inhaler.png"
+                                class="card-img-top" alt="Inhaler">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Inhaler</h5>
+                    <p class="card-text">For relief from asthma symptoms.</p>
+                    <p class="card-text"><Strong>Price:</Strong> $15.99</p>
+                    <button class="btn btn-primary" routerLink="/cart" (click)="addToCart(medicines)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <diV class="col-lg">
+            <div class="card">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2021/3/CP/JN/RL/61446284/brimodin-500x500.jpg"
+                                class="card-img-top" alt="Eye Drops">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2021/3/CP/JN/RL/61446284/brimodin-500x500.jpg"
+                                class="card-img-top" alt="Eye Drops">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2021/3/CP/JN/RL/61446284/brimodin-500x500.jpg"
+                                class="card-img-top" alt="Eye Drops">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Eye Drops</h5>
+                    <p class="card-text">Relieves dry and irritated eyes.</p>
+                    <p class="card-text"><Strong>Price:</Strong> $8.99</p>
+                    <button class="btn btn-primary" routerLink="/cart" (click)="addToCart(medicines)">Add to Cart</button>
+                </div>
+            </div>
+        </diV>
+    </div>
+</div>
+
+<!-- About Us Section -->
+<!-- <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+        [Company Name]: Providing high-quality medical supplies since [Year].
+        Our mission is to improve healthcare accessibility for all. 
+        We envision a healthier world through convenient online access to medical essentials.
+      </p>
+    </div>
+  </section>
+   -->
+  <!-- Contact Section -->
+  <!-- <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <ul>
+        <li><strong>Address:</strong> [Company Address]</li>
+        <li><strong>Phone:</strong> [Phone Number]</li>
+        <li><strong>Email:</strong> [Email Address]</li>
+        <li><strong>Website:</strong> [Website URL]</li>
+      </ul>
+    </div>
+  </section>
+   -->
+  <!-- Social Media Icons -->
+  <!-- <section id="social-media">
+    <div class="container">
+      <h2>Connect With Us</h2>
+      <div class="social-icons">
+        <a href="[Facebook Link]"><i class="fab fa-facebook"></i></a>
+        <a href="[Twitter Link]"><i class="fab fa-twitter"></i></a>
+        <a href="[Instagram Link]"><i class="fab fa-instagram"></i></a>
+        <a href="[LinkedIn Link]"><i class="fab fa-linkedin"></i></a>
+        <a href="[YouTube Link]"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </section> -->

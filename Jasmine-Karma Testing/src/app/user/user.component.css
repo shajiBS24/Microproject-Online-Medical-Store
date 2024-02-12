@@ -1,0 +1,38 @@
+.img-fluid{
+    max-height: 450px;
+}
+
+.card{
+  width: 80%;
+}
+
+.card img{
+    height: 200px;
+}
+.logo img{
+    max-height: 64px;
+}
+
+.container {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #007bff;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+.animation-card {
+    transition: transform 0.3s ease;
+  }
+  
+  .animation-card:hover {
+    transform: scale(1.05);
+  }
+
+  
